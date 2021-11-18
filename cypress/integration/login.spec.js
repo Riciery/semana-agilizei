@@ -21,12 +21,5 @@ describe('Twitter Clone - Login', () => {
 
     it('Login com usuário e senha válidos', () => {
         cy.login()
-
-        cy.visit('/')
-
-        cy.get('nav ul li')
-            .should('be.visible')
-            .and('have.length', 6)
-
     })
 })
